@@ -34,8 +34,8 @@ Config::Config() {
   this->staticSubnet = NULL;
 
   //
-  this->set_ssid("Suhani76");
-  this->set_passkey("password123");
+  this->set_ssid("Wifi_ID");
+  this->set_passkey("Wifi_password");
   {
     char clientName[20];
     uint32_t chipId =ESP.getChipId();
@@ -48,12 +48,10 @@ Config::Config() {
     strcat(clientName,chipIdStr);
     this->set_deviceName(clientName);
   }
-  this->set_mqttServerName("www.automationpanel.online");
-  this->set_mqttUsername("tajallitech");//browser
-  this->set_mqttPassword("Mqtt(78692)");//God$78692
-  this->set_mqttFingerprint("93 97 1E 32 9D 18 EA 61 97 DB 9C 18 73 14 2A 7E CB 38 0E 53");
-  // CA Fingerprint -->"F0 62 A9 CA 1F 25 7B DA F6 BE 2A 7A 83 94 9F 85 CF B7 7C B6"
-  // Server Fingerprint -->"93 97 1E 32 9D 18 EA 61 97 DB 9C 18 73 14 2A 7E CB 38 0E 53"
+  this->set_mqttServerName("www.MqttServer.com");
+  this->set_mqttUsername("Mqtt_ID");
+  this->set_mqttPassword("Mqtt_password");
+  this->set_mqttFingerprint("11 22 33 44 55 66 77 88 99 00 11 22 33 44 55 66 77 88 99 00");
 
 
   /*-----Magiv Operator R"x(...)x"
@@ -70,24 +68,24 @@ MzMzWhcNMjQwMjIyMDQxMzMzWjCBrjELMAkGA1UEBhMCSU4xEDAOBgNVBAgMB0d1
 amFyYXQxETAPBgNVBAcMCFZhZG9kYXJhMRwwGgYDVQQKDBNUYWphbGxpdGVjaCBQ
 dnQgTHRkMR8wHQYDVQQLDBZBdXRvbWF0aW9uIERldmVsb3BtZW50MRYwFAYDVQQD
 DA1BbWl0IFBhbmFzYXJhMSMwIQYJKoZIhvcNAQkBFhRhbWl0QHRhamFsbGl0ZWNo
-LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL9IQDGNhZuICPiJ
-LZmfn9FjvMwm1L66ZL8qodLZ0JkpJIc/YFzgRyAJGAVwvPjXEmGQoWAYc3crZZ1S
-ILxGCeMwejiYJUF0UYNA1xvbN4QHPsE8FVwfWXZ2+8+zCZb+yGnEEzm2WhyVSNkD
-tdK7v3LsQsHMM1l6AJaLXepgQYRkRAbuXsK8QXqq9TZ1IEAwg8Y36Q8IegN7Xi4i
-gHWjnYm1/zcRQEYUD/B1qQKV7IiNBPz85/ui3A9Jl6/+yMIDArtvQbNablXryiTf
-+rUVX6oF83ikC3043xsEgQr3E+LPy+4cbM3WLQGRC0abQxXsLaYXSd8Nc4iAtV+I
+amFyYXQxETAPBgNVBAcMCFZhZG9kYXJhMRwwGgYDVQQKDBNUYWphbGxpdGVjaCBQ
+dnQgTHRkMR8wHQYDVQQLDBZBdXRvbWF0aW9uIERldmVsb3BtZW50MRYwFAYDVQQD
+DA1BbWl0IFBhbmFzYXJhMSMwIQYJKoZIhvcNAQkBFhRhbWl0QHRhamFsbGl0ZWNo
+amFyYXQxETAPBgNVBAcMCFZhZG9kYXJhMRwwGgYDVQQKDBNUYWphbGxpdGVjaCBQ
+dnQgTHRkMR8wHQYDVQQLDBZBdXRvbWF0aW9uIERldmVsb3BtZW50MRYwFAYDVQQD
+DA1BbWl0IFBhbmFzYXJhMSMwIQYJKoZIhvcNAQkBFhRhbWl0QHRhamFsbGl0ZWNo
 ofZGPW0CAwEAAaNTMFEwHQYDVR0OBBYEFIkr2xRGgaP1gqc1IqjZxLuhEUoXMB8G
 A1UdIwQYMBaAFIkr2xRGgaP1gqc1IqjZxLuhEUoXMA8GA1UdEwEB/wQFMAMBAf8w
 DQYJKoZIhvcNAQELBQADggEBADD5foQ8aU5OLzwY6hp8s5Re7xWo+uwPV4wKZ+Fd
-ynjOES6ERU4iFdRacRmtaebDUX48GHiQi9HRkoDN5ElIOo9nkiEBuv2JG/xjjkuk
-0CH7diz4DDgDf3B0GcTxlH088UcphQD6/MjzTvlohLCp4VpyVJvuPUZqf0jyiTwS
-C4qF8mKEMIIRlmkrtzH7IDZVheiJCSqWc4YEunRalqzu0u5C+fGIxv8Ss+N8CSzK
+amFyYXQxETAPBgNVBAcMCFZhZG9kYXJhMRwwGgYDVQQKDBNUYWphbGxpdGVjaCBQ
+dnQgTHRkMR8wHQYDVQQLDBZBdXRvbWF0aW9uIERldmVsb3BtZW50MRYwFAYDVQQD
+DA1BbWl0IFBhbmFzYXJhMSMwIQYJKoZIhvcNAQkBFhRhbWl0QHRhamFsbGl0ZWNo
 GkVm0aXrICHNXPS1Ljfa0HYeS5TD7wOunHIUHhkfVMBi1DX9VsNITAYiy5fi8Z3k
 3rmhcrHyCccaeCezII2UNT8vVYg9Cyq/2PB2xYwAFJnumPE=
 -----END CERTIFICATE-----
 )EOF");
-  this->set_mqttPublishChannel("deca");
-  this->set_mqttSubscribeChannel("deca");
+  this->set_mqttPublishChannel("topic");
+  this->set_mqttSubscribeChannel("topic");
   this->set_syslogHost("");
   this->set_staticIP("");
   this->set_staticDNS("");
