@@ -1,7 +1,11 @@
 //https://www.walletfox.com/course/fp_functioncomposition.php
 #ifndef TTModbus_h
 #define TTModbus_h
-#include <ModbusMasterFP.h>       //https://github.com/4-20ma/ModbusMaster... buffer size modified to 128 from 64 ... 
+
+#include <ModbusMasterFP.h>       
+//https://github.com/4-20ma/ModbusMaster... buffer size modified to 128 from 64 ... 
+//https://github.com/apanasara/ModbusMasterFP... for passing function from ModbusMaster Class to TTModbus Class
+
 #include <ArduinoJson.h> //version 5.x
 class TTModbus
 {
